@@ -1,0 +1,112 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #052030; /* Left border */
+    border-right: 5px solid #052030; /* Right border */
+}
+
+header {
+    background: #052030;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    border-left: 10px;
+    border-right: 10px;
+}
+
+article {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a maximum width for the article */
+    margin-left: auto; /* Center the article */
+    margin-right: auto; /* Center the article */
+}
+
+/* Media query for landscape orientation */
+@media (orientation: landscape) {
+    article {
+        width: 100%; /* Ensure it takes full width in landscape */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+}
+
+/* Media query for portrait orientation */
+@media (orientation: portrait) {
+    article {
+        width: 100%; /* Ensure it takes full width in portrait */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+}
+
+p {
+    text-indent: 2em; /* Indent the first line of each paragraph */
+    margin-bottom: 1em; /* Add space between paragraphs */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #052030;
+    color: #ffffff;
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Styling for Swedish words */
+.tooltip {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #333;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.tooltip:hover {
+    color: #000;
+    font-weight: bolder;
+}
+
+.date-box {
+    display: inline-block;
+    background-color: #f4f8fb; /* Light blue background */
+    border: 2px solid #052030; /* Darker border */
+    border-radius: 15px; /* Curved box */
+    padding: 5px 10px; /* Padding for the text */
+    margin: 0; /* No extra margin */
+    font-weight: bold; /* Bold text */
+}
